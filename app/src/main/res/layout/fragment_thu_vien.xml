@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1C1C1C">
+    <RelativeLayout
+        android:id="@+id/relative11"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textviewpremium1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dùng thử Premium miễn"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_below="@+id/textviewpremium1"
+            android:id="@+id/textviewpremium2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="phí trong 1 tháng"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative11"
+        android:layout_marginTop="13dp">
+
+        <Button
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="122dp"
+            android:layout_marginRight="122dp"
+            android:gravity="center"
+            android:text="DÙNG PREMIUM" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20sp"
+        android:id="@+id/relative33"
+        android:layout_below="@+id/relative22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewpremium1"
+            android:layout_margin="15sp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#630B0B0B"
+                android:gravity="center"
+                android:text="Sử dụng miễn phí ứng dụng"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:scaleType="fitXY"
+       android:layout_marginLeft="57dp"
+        android:id="@+id/img123"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/relative33"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/premium2" />
+
+    <ImageView
+        android:layout_marginLeft="57dp"
+        android:scaleType="fitXY"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/img123"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/premium1" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:scaleType="fitXY"
+    android:id="@+id/imageviewbackgroudbanner"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"/>
+    <View
+        android:background="@drawable/custom_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_alignBottom="@+id/imageviewbackgroudbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imageviewbanner"
+            android:padding="2dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
+        <TextView
+            android:id="@+id/textviewtitlebannerbaihat"
+            android:textSize="22sp"
+            android:text="hello"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:layout_alignTop="@+id/imageviewbanner"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:layout_below="@+id/textviewtitlebannerbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"  >
+            <TextView
+                android:id="@+id/textviewnoidung"
+                android:textColor="#fffdfc"
+                android:text="hellokldaslkfjslakjflkdsajfl"
+                android:maxLines="2"
+                android:layout_marginRight="40dp"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
